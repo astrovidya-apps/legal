@@ -92,14 +92,16 @@ The app offers **Premium**, and the only thing it does is remove the ads describ
 section 4. No astrology feature is locked behind it — Kundli, Panchang, Muhurta,
 matchmaking, horoscopes, career guidance and PDF export are free for everyone.
 
-Premium is sold as **one-time payments only**: a one-year pass, or lifetime access.
-Nothing auto-renews, and there is nothing to cancel.
+Premium is sold as an **auto-renewing subscription**, monthly or yearly. It renews until
+you cancel it, and you can cancel at any time in Google Play → Subscriptions. Cancelling
+stops the next renewal; your access runs to the end of the period you have already paid for.
 
-Payment is handled entirely by Google Play. We never see, receive or store your card
-details, and we run no payment system of our own. What stays on your device is a single
-flag recording that you hold Premium and, for the one-year option, the date it ends.
-"Restore Purchases" on the Premium screen asks Google Play whether you already own it,
-which is what recovers your purchase after a reinstall or on a new device.
+Payment, renewal and cancellation are handled entirely by Google Play. We never see,
+receive or store your card details, and we run no payment system of our own. What stays on
+your device is a single flag recording that a subscription is currently active — no payment
+data and no billing history. "Restore Purchases" on the Premium screen asks Google Play
+whether your account holds a subscription, which is what recovers it after a reinstall or
+on a new device.
 
 ## 6. Analytics and tracking
 
