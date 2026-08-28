@@ -1,0 +1,7 @@
+theme: jekyll-theme-minimal
+title: AstroVidya
+description: Legal documents for the AstroVidya Android app
+
+# Served at https://astrovidya-apps.github.io/legal/ - a project site, so baseurl must
+# be the repo name or the theme stylesheet 404s and both pages render unstyled.
+baseurl: "/legal"
