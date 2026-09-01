@@ -118,10 +118,22 @@ described in section 4.
 
 ## 7. Permissions the app asks for, and why
 
+This is the complete list. Some of these are not asked for by the app itself but are
+merged in by the Google libraries it includes; they are listed here anyway, because a list
+that leaves things out is not a list.
+
   - **Internet** — used to request the banner ads described in section 4. No app feature
     uses the network; every chart, panchang, match and horoscope is computed offline.
+  - **Network state** — added by the Google Mobile Ads library, which checks whether a
+    connection exists before trying to fetch an ad. It reveals whether you are online, not
+    what you do online: it gives no access to your browsing, your traffic or its contents.
   - **Advertising ID (AD_ID)** — declared by the Google Mobile Ads library so that it can
     request ads. See section 4, including how to reset or delete that identifier.
+  - **Ad Services (Topics, Attribution, Advertising ID)** — three permissions declared by
+    the Google Mobile Ads library for Android's Privacy Sandbox, the system-level framework
+    that is replacing cross-app tracking. They let the ad library ask Android for ad
+    signals instead of gathering them itself. They give it no access to anything this app
+    stores, and nothing described in section 3 is affected.
   - **Notifications** — only to deliver the daily horoscope, and only if you switch it on.
   - **Storage (Android 9 and below only)** — only to save a chart PDF you asked to export.
   - **Wake lock / foreground service** — added by Android's own WorkManager, which is what
@@ -130,6 +142,9 @@ described in section 4.
   - **Billing** — added by the Google Play Billing library described in section 5. It is
     used only if you choose to buy or restore Premium. The purchase itself is completed by
     Google Play; no payment details ever reach this app.
+
+There is also one internal permission that Android generates for the app's own components
+to talk to each other. It cannot be held by any other app and grants nothing.
 
 The app requests **no location permission**, **no contacts**, **no camera** and **no
 microphone**.
